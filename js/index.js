@@ -22,7 +22,7 @@ let symbolValue = Symbol();
 console.log('symbolValue :>> ', symbolValue);
 console.log('typeof symbolValue:>> ', typeof symbolValue);
 
-//   алерт
+// алерт
 // Операторы
 // Унарные, бирнарные, тернарные
 // Приоритет операций
@@ -37,7 +37,7 @@ console.log('typeof symbolValue:>> ', typeof symbolValue);
 // !!! Не использовать нестрогое
 
 // Условный оператор
-// что есть false
+// что есть false - набор значений
 // prompt
 const a = prompt("Input string");
 console.log('a :>> ', a);
@@ -60,3 +60,9 @@ if (inputNumberValue > 10) {
 
 // Область видимости (внутри нее имена уникальны)
 // Дебаггер
+
+// Подводка к циклам: 5 раз одно и то же
+// Циклы
+// while
+// break
+// Задача: ввести 5 раз пароль, если не ввел правильно - ошибка
