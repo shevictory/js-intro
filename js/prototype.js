@@ -43,3 +43,31 @@ const driver1 = {
 car.driver = driver1;
 
 // пример с летающим супергероем
+
+/**
+ * Наследование с функциями-конструкторами
+ */
+function Book(title) {
+  this.title = title;
+}
+
+Book.prototype.printInfo = function () {
+  console.log('title :>> ', this.title);
+};
+
+function ElectronicBook(weight) {
+  this.weight = weight;
+}
+console.log('ElectronicBook.prototype :>> ', ElectronicBook.prototype);
+ElectronicBook.prototype = Object.create(Book.prototype);
+
+console.log('ElectronicBook.prototype :>> ', ElectronicBook.prototype);
+ElectronicBook.prototype.printWeight = function () {
+  console.log('weight :>> ', this.weight);
+};
+console.log('ElectronicBook.prototype :>> ', ElectronicBook.prototype);
+
+const e = new ElectronicBook(55);
+console.log('e :>> ', e);
+e.printInfo();
+e.printWeight();
