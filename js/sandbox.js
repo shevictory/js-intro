@@ -1,8 +1,22 @@
-function f(a, ...args) {
-  console.log('a :>> ', a);
-  console.log('arguments :>> ', arguments);
-  console.log('args :>> ', args);
+'use strict';
+
+console.group('Sandbox');
+
+// class A {
+//   constructor(a) {
+//     this.a = a;
+//   }
+// }
+// class B {
+//   constructor(a) {
+//     this.__proto__ = Object.create(A.__proto__);
+//   }
+// }
+
+function f() {
+  //console.log('arguments :>> ', arguments);
 }
 
-f(2);
-f(2, 5, 8, 9, 6, 3, 2);
+f(5, 6, 9);
+
+console.groupEnd();
