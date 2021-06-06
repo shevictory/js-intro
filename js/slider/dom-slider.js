@@ -7,28 +7,36 @@ const slides = [
 ];
 
 const sliderImage = document.querySelector('img');
-const [nextBtn, prevBtn] = document.querySelectorAll('button');
+const [prevBtn, nextBtn] = document.querySelectorAll('button');
 
 const slider = new Slider(slides);
 
-nextBtn.addEventListener('click', showPrevImage);
-
-prevBtn.addEventListener('click', showNextImage);
-
 updateView();
+
+const changeSlideButtonHandler =
+  (direction = 'next') =>
+  e => {
+    slider.currentIndex = slider[direction];
+    sliderImage.setAttribute('src', slider.currentSlide);
+    updateView();
+  };
+
+nextBtn.addEventListener('click', changeSlideButtonHandler('next'));
+
+prevBtn.addEventListener('click', changeSlideButtonHandler('prev'));
 
 function updateView() {
   sliderImage.setAttribute('src', slider.currentSlide);
 }
 
-function showPrevImage(e) {
-  slider.currentIndex = slider.prev;
-  sliderImage.setAttribute('src', slider.currentSlide);
-  updateView();
-}
+// function nextBtnHandler(e) {
+//   slider.currentIndex = slider.prev;
+//   sliderImage.setAttribute('src', slider.currentSlide);
+//   updateView();
+// }
 
-function showNextImage(e) {
-  slider.currentIndex = slider.next;
-  sliderImage.setAttribute('src', slider.currentSlide);
-  updateView();
-}
+// function prevBtnHandler(e) {
+//   slider.currentIndex = slider.next;
+//   sliderImage.setAttribute('src', slider.currentSlide);
+//   updateView();
+// }

@@ -9,7 +9,6 @@ class Slider {
     return this._images;
   }
   set currentIndex(v) {
-    console.log('v :>> ', v);
     if (typeof v !== 'number') {
       throw TypeError();
     }
