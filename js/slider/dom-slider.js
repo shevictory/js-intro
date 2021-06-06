@@ -26,7 +26,8 @@ nextBtn.addEventListener('click', changeSlideButtonHandler('next'));
 prevBtn.addEventListener('click', changeSlideButtonHandler('prev'));
 
 function updateView() {
-  sliderImage.setAttribute('src', slider.currentSlide);
+  const { currentSlide } = slider;
+  sliderImage.setAttribute('src', currentSlide);
 }
 
 // function nextBtnHandler(e) {
