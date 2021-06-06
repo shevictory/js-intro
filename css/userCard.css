@@ -1,0 +1,62 @@
+#userList {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: silver;
+}
+
+.userCardWrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.userImageContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.userImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.deleteButton {
+  width: 50px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/*.userCardWrap{
+  display: flex;
+  align-items: center;
+  background-color: silver;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.userPictureContainer{
+  position: absolute;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.userPictureContainer > img {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  object-fit: cover; // чтобы картинка была в своих пропорциях
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}*/
