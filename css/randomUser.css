@@ -1,0 +1,38 @@
+@import './reset.css';
+
+:root {
+  font-family: sans-serif;
+}
+
+#userList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.userListItem {
+  border: 2px solid red;
+  margin: 20px;
+  width: 200px;
+}
+
+.userListItem > img {
+  width: inherit;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.userFullName {
+  text-align: center;
+  padding: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer > button {
+  margin: 15px;
+}
