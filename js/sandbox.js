@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 //========carrieng
 // const a1 = (b) => (c) => b + c;
 // // debugger;
@@ -17,22 +17,22 @@
 // const multAB = opAB(mult);
 
 //========fetch
-const url = "./../dbEmul.json";
+const url = './../dbEmul.json';
 
 // fetch(url)
 //   .then((data) => data.json())
 //   .then((user) => console.log(`user`, user))
 //   .catch((e) => console.error(e));
 
-(async function () {
-  const user = await getUser(url);
-  console.log(`user anonymus`, user);
-})();
-const user = getUser(url);
-console.log(`user`, user);
-async function getUser(url) {
-  const userData = await fetch(url);
-  const user = await userData.json();
-  console.log(`userData`, user);
-  return user;
-}
+// (async function () {
+//   const user = await getUser(url);
+//   console.log(`user anonymus`, user);
+// })();
+// const user = getUser(url);
+// console.log(`user`, user);
+// async function getUser(url) {
+//   const userData = await fetch(url);
+//   const user = await userData.json();
+//   console.log(`userData`, user);
+//   return user;
+// }
